@@ -1,0 +1,27 @@
+{
+  "name": "databaseproject",
+  "version": "1.0.0",
+  "description": "To install the server files you have to run the commands on the working directory",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^19.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanseda/CollegeEventWebsite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeanseda/CollegeEventWebsite/issues"
+  },
+  "homepage": "https://github.com/jeanseda/CollegeEventWebsite#readme",
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "eslint-config-reverentgeek": "^3.1.1"
+  }
+}
