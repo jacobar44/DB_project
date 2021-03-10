@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>RSO Search</title>
+  <meta name="Event Search" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <style>
+    form{
+        font-size: 25px;
+    }
+    body{
+        background-color: darkgrey;          
+    }
+    p2{
+        font-size: 25px;        
+    }
+    .SearchBar {
+         position: absolute;
+         top: 45px;
+         left: 15%;
+    }
+
+    .SearchBar input {
+         height: 25px;
+         width: 885px;
+         background-color:   #f7e081;
+    }
+    .event_info{
+        position: absolute;
+        top: 75px;
+        width: 100%;
+        height: 300px;
+        border: 5px solid black;
+        background-color:  #f7e081;
+    }
+    .button {
+      border: none;
+      color: white;
+      padding: 9px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .attendEvent {
+      background-color: lightgrey;
+      color: black;
+      border: 2px solid black;
+      position: absolute;
+      left: 45%;
+      top: 250px;
+    }
+
+    .attendEvent:hover {
+      background-color: #f2e094;
+      color: black; 
+    }
+
+    .homeButton{
+          background-color: lightgray;
+          color: black;
+          border: 2px solid black;
+          position: absolute;
+          top: 85%;
+    }
+
+    .homeButton:hover {
+      background-color: #f7e081;
+      color: black; 
+    }
+    </style>
+</head>
+
+<body>
+<div class = "SearchBar">
+    <form>
+        Event Search: <input type="text" name="search_input" placeholder="Search for Events">
+        <br>
+    </form>
+    
+    <div class = "event_info">
+    <p2><u>Search Results...</u></p2>
+    <button class="button attendEvent">Attend Event</button>
+    </div>
+</div>
+<a href="Home.html"><button class="button homeButton">HOME</button></a>    
+</body>
+</html>

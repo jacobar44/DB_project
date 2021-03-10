@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en">
+<head>    
+  <meta charset="utf-8">
+
+  <title>User Login</title>
+  <meta name="Page for creating new RSO" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <style>
+      h1{
+          text-align: center;
+      }
+      body{
+          background-color: lightgrey;
+          text-align: center;
+      }
+      .EventForm{
+          position: absolute;
+          left: 355px;
+          right: 275px;
+          background-color: #f7e081;
+          border: 3px;
+          padding-top: 75px;
+          padding-bottom: 125px;
+          padding-left: 225px;
+          padding-right: 150px;
+          
+      }
+      form{
+          text-align: left;
+      }
+      select, TEXTAREA{
+          background-color: lightgrey;
+      }
+      input{
+          position:relative
+          width: 50%;
+          background-color: lightgrey;
+      }
+      .button {
+          border: none;
+          color: white;
+          padding: 9px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+        }
+
+        .homeButton{
+          background-color: #f7e081;;
+          color: black;
+          left: 55px;
+          right: 275px;
+          border: 2px solid black;
+          position: absolute;
+          top: 2%;
+        }
+
+        .homeButton:hover {
+          background-color: darkgrey;
+          color: black; 
+        }
+        .submitButton{
+          background-color: #f7e081;;
+          color: black;
+          left: 285px;
+          right: 275px;
+          border: 2px solid black;
+          position: absolute;
+          top: 85%;
+        }
+        .submitButton:hover {
+          background-color: darkgrey;
+          color: black; 
+        }
+  </style>
+</head>
+
+<body>
+    <div>
+        <h1>RSO Creation</h1>
+
+        <form class="EventForm">
+            
+            <label for="EventCategory">Please select the event category:</label>
+            <select name="EvenCategory" id="category" required>
+              <option value="social">Social</option>
+              <option value="fundraising">Fundraising</option>
+              <option value="tech talks">Tech Talks</option>
+              <option value="sports">Sports</option>
+              <option value="party">Party</option>
+              <option value="lifeskills">Life Skills</option>
+            </select>
+            <br>
+            <br>
+            <label for="EventType">Please select the event type:</label>
+            <select name="Eventype" id="type" required>
+              <option value="public">Public</option>
+              <option value="private">Private</option>
+              <option value="rso">RSO</option>
+            </select>
+            
+            <br><br>
+            Event Name: <input type="text" name="eventName" class="inputBox" required>
+            <br>
+            <br>
+            Event Time: <input type="time" name="eventTime" class="inputBox" required>
+            <br>
+            <br>
+            Event Date: <input type="date" name="eventDate" class="inputBox" required>
+            <br>
+            <br>
+            Event Description: <br><TEXTAREA Name="content" ROWS="2" COLS="20" required></TEXTAREA>
+            <br>
+            Contact Phone Number: <input type="tel" name="phoneNum" class="inputBox"
+                                placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <br>
+            <br>
+            Contact Email Address: <input type="email" name="eventDate" class="inputBox" required>
+            <a href=#submit><button class="button submitButton">SUBMIT</button></a>
+        </form>
+    </div>
+   <a href="Home.html"><button class="button homeButton">HOME</button></a>
+</body>
+</html>
