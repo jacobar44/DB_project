@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd; 
+}
+input{
+  background-color: #f7e081;
+  color: black;
+}
+.topnav {
+  overflow: hidden;
+  background-color: darkgrey;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  padding-left: 55px;
+  /*padding-right: 25px;*/
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #f7e081;
+  color: grey;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a class="active" href="UserLogin.html">Login</a>
+    <a href="rsoSearch.html">RSO Search</a>
+    <a href="display_event.php">Events Posted</a>
+    <a href="Event_Create.php">Create Event</a>
+    <a href="add_user.php">New User</a>
+    <input type="text" placeholder="Search..">
+</div>
+
+<div style="padding-left:16px; position: relative;  top: 2in; left: 4.5in">
+  <h2>Welcome to College Event Manager!</h2>
+
+</div>
+
+</body>
+</html>
